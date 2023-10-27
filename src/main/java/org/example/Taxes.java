@@ -1,7 +1,7 @@
 package org.example;
 
 public class Taxes {
-    public static int[] checkBracket (int salary){
+    public static int[] CheckBracket (int salary){
         int[][] brackets = {{0, 14999, 0}, {15000, 19999, 500}, {20000, 29999, 1500}, {30000, 44999, 3000}};
         int[] diffAndBracket = {0,4,0, salary};
 
@@ -27,7 +27,7 @@ public class Taxes {
 
         return diffAndBracket;
     }
-    public static int calcTakeHome (int[] diffAndBracket) {
+    public static int CalcTakeHome (int[] diffAndBracket) {
         double[] taxPercentages = {0.0, 0.1, 0.15, 0.2, 0.25};
         int taxTotal = diffAndBracket[2];
         int taxCalc = (int)Math.round((diffAndBracket[0] * taxPercentages[diffAndBracket[1]]));
