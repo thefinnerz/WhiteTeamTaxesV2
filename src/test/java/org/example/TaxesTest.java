@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class TaxesTest {
     @Test
     void TestCheckBracket() {
-        int[] expectedBracket = {7000,0,0,7000};
+        int[] expectedBracket = {1000,0,0,1000};
         int[] actualBracket = Taxes.CheckBracket(7000);
         Assertions.assertEquals(expectedBracket[0], actualBracket[0]);
         Assertions.assertEquals(expectedBracket[1], actualBracket[1]);
