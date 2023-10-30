@@ -11,7 +11,7 @@ pipeline {
                 steps {
                     // Get some code from a GitHub repository
 
-                    git branch: 'main', url: 'https://github.com/thefinnerz/gitdemo2'
+                    git branch: 'main', url: 'https://github.com/thefinnerz/WhiteTeamTaxesV2'
                 }
             }
             stage('Compile') {
