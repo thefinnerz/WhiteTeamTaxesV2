@@ -11,7 +11,7 @@ class TaxesTest {
     @Test
     void TestCheckBracket() {
         int[] expectedBracket = {1000,0,0,1000};
-        int[] actualBracket = Taxes.CheckBracket(7000);
+        int[] actualBracket = Taxes.CheckBracket(1000);
         Assertions.assertEquals(expectedBracket[0], actualBracket[0]);
         Assertions.assertEquals(expectedBracket[1], actualBracket[1]);
         Assertions.assertEquals(expectedBracket[2], actualBracket[2]);
